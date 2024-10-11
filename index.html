@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <title>Michal Tesák</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js" defer></script>
+    <script src="scrtipt.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="Icons/Ikona.png">
+</head>
+ <body>
+ <section id="Home">
+     <header class="header">
+         <nav>
+             <div class="logo">
+                 <!-- <img src="Icons/moon.png" id="icon"> -->
+                 <a href="index.html"><span> Michal Tesák</span></a>
+             </div>
+             <input type="checkbox" id="menu-toggle">
+             <label for="menu-toggle" class="menu-icon">&#9776;</label>
+             <ul class="menu">
+                 <li><a href="#Home">Home</a></li>
+                 <li><a href="#Skills">Skills</a></li>
+                 <li><a href="#Portfolio">Portfolio</a></li>
+                 <li><a href="#Contact">Contact</a></li>
+             </ul>
+         </nav>
+     </header>
+     <div class="text-container-main"><h1>HEY, I'M MICHAL TESÁK</h1></div>
+     <div class="text-container"><h2>A Future Web Developer, currently studying Web Development and Web Design at Baltaci High School in Zlin, Czechia.</h2></div>
+     <button class="button" onclick="location.href='#Portfolio';"><span>Portfolio</span></button>
+ </section>
+ <section id="Skills">
+ <span class="text-container-main-other">ABOUT ME</span>
+     <div class="divider-under"></div>
+     <div class="text-container-other"><h2>Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</h2></div>
+     <div class="About-section">
+         <div class="About-section-main">
+             <h3 class="About-section-title">Get to know me!</h3>
+             <p class="About-section-details">  A Future Web Developer, currently studying Web Development, Web Design, 2D Graphics and Hardware at Baltaci High School in Zlin, Czechia.
+                 I have already made a few things that you can check out in the <strong>Portfolio section.</strong> </p>
+             <p class="About-section-details">  I've listed on the right various programming languages and software that I have experience with.
+                 Just to mention, I don't use all of them currently; for instance, I worked with Unity some time ago.
+             </p>
+             <p class="About-section-details">  I'm open to Job opportunities where I can contribute, learn and grow.
+                 If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.</p>
+             <button class="button" onclick="location.href='#Contact';"><span>Contact</span></button>
+         </div>
+         <div class="About-section-skills">
+             <h3 class="About-section-title">My Skills</h3>
+             <div class="skills">
+                 <div class="skills__skill">HTML</div>
+                 <div class="skills__skill">CSS</div>
+                 <div class="skills__skill">C#</div>
+                 <div class="skills__skill">Unity</div>
+                 <div class="skills__skill">Premier Pro</div>
+                 <div class="skills__skill">Photoshop</div>
+                 <div class="skills__skill">Filmora</div>
+                 <div class="skills__skill">PC Building</div>
+                 <div class="skills__skill">Device Repair</div>
+             </div>
+         </div>
+     </div>
+ </section>
+ <section id="Portfolio">
+     <span class="text-container-main-other">PORTFOLIO</span>
+     <div class="divider-under"></div>
+     <div class="text-container-other"><h2>I've handpicked a few of my projects that I want to share. Most of the work here was created for school projects.</h2></div>
+     <div class="wrap">
+         <a href="Webs.html">
+         <div class="tile">
+             <img src="Icons/e1wwak-ezgif.com-webp-to-jpg-converter.jpg"/>
+             <div class="text">
+                 <h1>Website's</h1>
+                 <h2 class="animate-text">Website's that I made in school</h2>
+                 <p class="animate-text">These are some of the websites I created for school projects. I learned a lot while making them.</p>
+             </div>
+         </div>
+         </a>
+
+         <a href="Grapchics.html">
+         <div class="tile">
+             <img src="Icons/20240608_105949232_43iOS.jpg"/>
+             <div class="text">
+                 <h1>2D graphics</h1>
+                 <h2 class="animate-text">2D Graphics that I made in school</h2>
+                 <p class="animate-text">These are some of the 2D graphics I created for school projects. I learned a lot while making them. Most of ther are made in Photoshop!</p>
+             </div>
+         </div>
+         </a>
+
+         <a href="PcBuild.html">
+         <div class="tile">
+             <img src="Icons/image_2024-06-08_215818657.jpg"/>
+             <div class="text">
+                 <h1>PC Building</h1>
+                 <h2 class="animate-text">PC Builds I made</h2>
+                 <p class="animate-text">There are some photos of PCs I built, upgraded, or even fixed.</p>
+             </div>
+         </div>
+     </div>
+     </a>
+
+
+     </div>
+ </section>
+ <section id="Contact">
+     <span class="text-container-main-other">CONTACT</span>
+     <div class="divider-under"></div>
+     <div class="text-container-other"><h2>You can contact me using this form or through other methods mentioned below. You can also find links to my social media.</h2></div>
+     <form class="cf">
+         <div class="half left cf">
+             <input type="text" id="input-name" placeholder="Name">
+             <input type="email" id="input-email" placeholder="Email address">
+             <input type="text" id="input-subject" placeholder="Subject">
+         </div>
+         <div class="half right cf">
+             <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+         </div>
+         <input type="submit" value="Submit" id="input-submit">
+     </form>
+ </section>
+ </body>
+<footer class="site-footer">
+    <div class="container-footer">
+        <div class="column">
+            <h6>About</h6>
+            <div class="about-footer-phone">
+            <p class="text-justify">HEY, Michal Tesák here I'am A Future Web Developer, currently studying Web Development and Web Design at Baltaci High School in Zlin, Czechia.</p>
+            </div>
+        </div>
+        <div class="column">
+                <h6>Quick Links</h6>
+                <ul class="footer-links">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+        </div>
+
+        <div class="column">
+            <h6>Social Media </h6>
+            <ul class="social-icons">
+                <li><a class="facebook" href="https://www.facebook.com/profile.php?id=100072677343360&locale=cs_CZ"><i class="fab fa-facebook"></i></a></li>
+                <li><a class="twitter" href="https://x.com/michal71593749"><i class="fab fa-twitter"></i></a></li>
+                <li><a class="discord" href="discordapp.com/users/620696875456135199"><i class="fab fa-discord"></i></a></li>
+                <li><a class="youtube" href="https://www.youtube.com/channel/UCbSwk6Y6PHMK9KOp8nnKI2g"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+            <ul class="social-icons">
+                <li><a class="instagram" href="https://www.instagram.com/czech_ninja_?igsh=MTFsNXVnZXp2bndzbg=="><i class="fab fa-instagram"></i></a></li>
+                <li><a class="Personalities" href="https://www.16personalities.com/profiles/aab75c393a660"><i class="fas fa-person"></i></a></li>
+                <li><a class="Github" href="#"><i class="fab fa-github"></i></a></li>
+                <li><a class="linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <p class="copyright-text">Copyright &copy; 2024 All Rights Reserved by Michal Tesák</p>
+</footer>
+ <script>var icon = document.getElementById("icon");
+
+ icon.onclick = function(){
+     document.body.classList.toggle("dark-theme");
+     if(document.body.classList.contains("dark-theme")){
+         icon.src = "Icons/sun.png";
+     }else {
+         icon.src = "Icons/moon.png";
+     }
+ }</script>
+ </html>
