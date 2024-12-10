@@ -13,6 +13,9 @@
     --primary-color:rgba(18, 20, 22, 1);
     --secondary-color:rgba(242, 241, 249, 1);
 }
+html {
+    scroll-behavior: smooth;
+}
 .dark-theme{
     --primary-color:rgba(242, 241, 249, 1);
     --secondary-color:rgba(18, 20, 22, 1);
@@ -28,6 +31,7 @@
 body {
     background-color:var(--primary-color);
 }
+
 .header {
     position: fixed;
     top: 0;
@@ -230,6 +234,11 @@ section#Home h1 {
     font-weight: 800;
     font-size: 5rem;
     color: rgba(242, 241, 249, 1);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.char {
+    transform: translateY(115px);
+    transition: transform .5s;
 }
 section#Home h2 {
     font-weight: normal;
@@ -352,6 +361,31 @@ section#Contact {
     align-items: center;
     max-width:1200px;
 }
+.Videos-portfolio{
+    padding-top: 130px;
+    margin: auto;
+    width: 100%;
+    align-items: center;
+    max-width: 1200px;
+    text-align: center;
+    align-self: center;
+}
+.Videos-portfolio h1{
+    font-weight: normal;
+    line-height: 1.5;
+    font-size: 2.2rem;
+    color: rgba(242, 241, 249, 1);
+}
+.Videos-portfolio h2{
+    font-weight: normal;
+    line-height: 1.2;
+    font-size: 1rem;
+    color: rgba(242, 241, 249, 1);
+}
+.Video-portfolio {
+    width:1024px;
+    height:576px;
+}
 .tile
 {
     width:380px;
@@ -365,6 +399,7 @@ section#Contact {
     transition: all 0.4s ease-out;
     overflow:hidden;
     color:rgba(242, 241, 249, 0.85);
+    border-radius: 16px;
 }
 .tile img
 {
@@ -480,7 +515,7 @@ form textarea:focus {
 }
 
 form textarea {
-    height: 126px;
+    height: 187px;
 }
 
 .half {
@@ -508,6 +543,16 @@ form textarea {
 }
 /* contact *//* contact *//* contact *//* contact *//* contact */
 /* footer *//* footer *//* footer *//* footer *//* footer */
+.clock-container {
+    text-align: center;
+    padding: 20px 40px;
+}
+
+#clock {
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
 .site-footer
 {
     background-color:#26272b;
@@ -536,7 +581,8 @@ form textarea {
     font-size:16px;
     text-transform:uppercase;
     margin-top:5px;
-    letter-spacing:2px
+    margin-bottom:5px;
+    letter-spacing:3px
 }
 .site-footer a
 {
@@ -833,6 +879,21 @@ form textarea {
         padding-left:5%;
         padding-right:5%;
     }
+    .Videos-portfolio{
+        padding-top: 130px;
+        margin: auto;
+        width: 100%;
+        align-items: center;
+        max-width: 800px;
+        text-align: center;
+        align-self: center;
+    }
+    .Videos-portfolio h1{
+        font-size: 1.6rem;
+    }
+    .Videos-portfolio h2{
+        font-size: 0.8rem;
+    }
 }
 @media (max-width: 380px) {
     .logo a {font-size: 2.1rem;
@@ -847,5 +908,51 @@ form textarea {
     .tile
     {
         width:340px;
-        height:340px;}
+        height:340px;}  
+        .Videos-portfolio h1{
+            font-size: 1.2rem;
+        }
+        .Videos-portfolio h2{
+            font-size: 0.6rem;
+        }
 }
+/* For extra large screens */
+@media (max-width: 1024px) {
+    .Video-portfolio {
+        width: 854px;
+        height: 480px;
+    }
+}
+
+/* For large screens */
+@media (max-width: 768px) {
+    .Video-portfolio {
+        width: 640px;
+        height: 360px;
+    }
+}
+
+/* For medium screens */
+@media (max-width: 640px) {
+    .Video-portfolio {
+        width: 426px;
+        height: 240px;
+    }
+}
+
+/* For small screens */
+@media (max-width: 480px) {
+    .Video-portfolio {
+        width: 320px;
+        height: 180px;
+    }
+}
+
+/* For very small screens */
+@media (max-width: 380px) {
+    .Video-portfolio {
+        width: 256px;
+        height: 144px;
+    }
+}
+
