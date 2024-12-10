@@ -12,4 +12,14 @@ $( '.js-input' ).keyup(function() {
     }
 });
 
-gsap.from('.text-container',  {duration:2.5,ease: "power2.out",y: -250});
+
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});
