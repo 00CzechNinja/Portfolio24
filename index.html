@@ -5,9 +5,7 @@
     <title>Michal Tesák</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js" defer></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="scrtipt.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="Icons/Ikona.png">
@@ -30,10 +28,24 @@
              </ul>
          </nav>
      </header>
-     <div class="text-container-main"><h1>HEY, I'M MICHAL TESÁK</h1></div>
+
+     
+
+     <div id="name-main-text" class="text-container-main"><h1>HEY, I'M MICHAL TESÁK</h1></div>
      <div class="text-container"><h2>A Future Web Developer, currently studying Web Development and Web Design at Baltaci High School in Zlin, Czechia.</h2></div>
      <button class="button" onclick="location.href='#Portfolio';"><span>Portfolio</span></button>
  </section>
+            <script src="https://unpkg.com/split-type"></script>
+            <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+            <script> const textcontainermain = new SplitType('#name-main-text') 
+            
+            gsap.to('.char', {
+            y: 0,
+            stagger: 0.05,
+            delay: 0.2,
+            duration: .1
+        })
+            </script>
  <section id="Skills">
  <span class="text-container-main-other">ABOUT ME</span>
      <div class="divider-under"></div>
@@ -71,13 +83,13 @@
      <div class="divider-under"></div>
      <div class="text-container-other"><h2>I've handpicked a few of my projects that I want to share. Most of the work here was created for school projects.</h2></div>
      <div class="wrap">
-         <a href="Webs.html">
+         <a href="Videos.html">
          <div class="tile">
-             <img src="Icons/e1wwak-ezgif.com-webp-to-jpg-converter.jpg"/>
+             <img src="Icons/editing-cover.png"/>
              <div class="text">
-                 <h1>Website's</h1>
-                 <h2 class="animate-text">Website's that I made in school</h2>
-                 <p class="animate-text">These are some of the websites I created for school projects. I learned a lot while making them.</p>
+                 <h1>Videos</h1>
+                 <h2 class="animate-text">Video Edits that I made in school</h2>
+                 <p class="animate-text">These are some of the Videos I edited for school projects. I learned a lot while making them.</p>
              </div>
          </div>
          </a>
@@ -95,7 +107,7 @@
 
          <a href="PcBuild.html">
          <div class="tile">
-             <img src="Icons/image_2024-06-08_215818657.jpg"/>
+             <img src="Icons/2023_0202_12573400.png"/>
              <div class="text">
                  <h1>PC Building</h1>
                  <h2 class="animate-text">PC Builds I made</h2>
@@ -124,13 +136,18 @@
          <input type="submit" value="Submit" id="input-submit">
      </form>
  </section>
+ <script> src="gsap.min.js"</script>
+ <script src="scriptgsap.js" defer></script>
  </body>
 <footer class="site-footer">
     <div class="container-footer">
         <div class="column">
-            <h6>About</h6>
+            <h6>My Time</h6>
             <div class="about-footer-phone">
-            <p class="text-justify">HEY, Michal Tesák here I'am A Future Web Developer, currently studying Web Development and Web Design at Baltaci High School in Zlin, Czechia.</p>
+                <div class="clock-container">
+                    <div id="clock"></div>
+                </div>
+                <script src="clock.js"></script>
             </div>
         </div>
         <div class="column">
